@@ -17,11 +17,22 @@
                 <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h2 class="modal-title" id="exampleModalLabel">QUESTION 1</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                    ...
+                    <div class="row">
+                        <div class="col">
+                            <p class="fs-3 card-body">1. What is the best case time complexity of deleting a node in a Singly Linked list?</p>
+                            <div class="d-grid gap-3 mt-5 ">
+                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" >A) O (n)</button>
+                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" >B) O (n2)</button>
+                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" >C) O (nlogn)</button>
+                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" >D) O (1)</button>
+                
+                              </div>
+                        </div>
+                    </div>
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -30,6 +41,18 @@
                 </div>
                 </div>
             </div>
+
+            <!--1. What is the best case time complexity of deleting a node in a Singly Linked list?
+                a) O (n)
+                b) O (n2)
+                c) O (nlogn)
+                d) O (1)
+
+                Answer: d
+                Explanation: Deletion of the head node in the linked list is taken as the best case. The successor of the head node is changed to head and deletes the predecessor of the newly assigned head node. This process completes in O(1) time.
+            
+            -->
+
         <button class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal">2</button>
         <div class="grid-item">3</div>  
         <div class="grid-item">4</div>
@@ -86,6 +109,8 @@
 
 
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        console.log("hello world");
+    </script>
 </body>
 </html>
