@@ -9,26 +9,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grid-container">
-        <button type="button" class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal">1</button>
+    <div class="grid-container" id="dgridcontainer">
+        <button type="button" class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal1" id="m1" value="01" onclick="myFunction(0)">1</button>
         
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <h2 class="modal-title" id="exampleModalLabel">QUESTION 1</h2>
+                    <h2 class="modal-title" id="exampleModalLabe"></h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                     <div class="row">
                         <div class="col">
-                            <p class="fs-3 card-body">1. What is the best case time complexity of deleting a node in a Singly Linked list?</p>
-                            <div class="d-grid gap-3 mt-5 ">
-                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" >A) O (n)</button>
-                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" >B) O (n2)</button>
-                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" >C) O (nlogn)</button>
-                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" >D) O (1)</button>
+                            <p class="fs-3 card-body" id="pquestion1"></p>
+                            <div class="d-grid gap-3 mt-5 " id="butngrop">
+                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt1"></button>
+                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt2"></button>
+                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt3"></button>
+                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt4"></button>
                 
                               </div>
                         </div>
@@ -41,6 +41,7 @@
                 </div>
                 </div>
             </div>
+        
 
             <!--1. What is the best case time complexity of deleting a node in a Singly Linked list?
                 a) O (n)
@@ -50,10 +51,48 @@
 
                 Answer: d
                 Explanation: Deletion of the head node in the linked list is taken as the best case. The successor of the head node is changed to head and deletes the predecessor of the newly assigned head node. This process completes in O(1) time.
-            
+                
+                1. Which of the following real world scenarios would you associate with a stack data structure?
+                a) piling up of chairs one above the other
+                b) people standing in a line to be serviced at a counter
+                c) offer services based on the priority of the customer
+                d) tatkal Ticket Booking in IRCTC
+
+                Answer: a
+                Explanation: Stack follows Last In First Out (LIFO) policy. Piling up of chairs one above the other is based on LIFO, people standing in a line is a queue and if the service is based on priority, then it can be associated with a priority queue. Tatkal Ticket Booking Follows First in First Out Policy. People who click the book now first will enter the booking page first.
             -->
 
-        <button class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal">2</button>
+        <button type="button" class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal1" id="m2" value="02" onclick="myFunction(1)">2</button>
+
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel"></h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <p class="fs-3 card-body" id="pquestion1"></p>
+                        <div class="d-grid gap-3 mt-5 " id="butngrop">
+                            <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt1"></button>
+                            <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt2"></button>
+                            <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt3"></button>
+                            <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt4"></button>
+            
+                          </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
         <div class="grid-item">3</div>  
         <div class="grid-item">4</div>
         <div class="grid-item">5</div>
@@ -104,13 +143,40 @@
     </div> 
     
     
-
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLabel">QUESTION 1</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div class="row">
+                <div class="col">
+                    <p class="fs-3 card-body" id="pquestion1"></p>
+                    <div class="d-grid gap-3 mt-5 " id="butngrop">
+                        <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt1"></button>
+                        <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt2"></button>
+                        <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt3"></button>
+                        <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt4"></button>
+        
+                      </div>
+                </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
 
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        console.log("hello world");
     </script>
+    <script src="java.js"></script>
 </body>
 </html>
