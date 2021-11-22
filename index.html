@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="grid-container" id="dgridcontainer">
-        <button type="button" class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal1" id="m1" value="01" onclick="myFunction(0)">1</button>
+        <button type="button" class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal1" id="0" value="01" onclick="questionFunction(0)">1</button>
         
             <!-- Modal -->
             <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -25,10 +25,12 @@
                         <div class="col">
                             <p class="fs-3 card-body" id="pquestion1"></p>
                             <div class="d-grid gap-3 mt-5 " id="butngrop">
-                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt1"></button>
-                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt2"></button>
-                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt3"></button>
-                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt4"></button>
+                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="" onclick="answerFunction(501,this)" name="abc"></button>
+                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id=""
+                                onclick="answerFunction(502,this)" name="abc"></button>
+                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id=""
+                                onclick="answerFunction(503,this)" name="abc"></button>
+                                <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="" onclick="answerFunction(504,this)" name="abc"></button>
                 
                               </div>
                         </div>
@@ -36,7 +38,7 @@
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" id="" onclick="checkAnswer(this)" name="submitBut">CHECK</button>
                     </div>
                 </div>
                 </div>
@@ -62,36 +64,9 @@
                 Explanation: Stack follows Last In First Out (LIFO) policy. Piling up of chairs one above the other is based on LIFO, people standing in a line is a queue and if the service is based on priority, then it can be associated with a priority queue. Tatkal Ticket Booking Follows First in First Out Policy. People who click the book now first will enter the booking page first.
             -->
 
-        <button type="button" class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal1" id="m2" value="02" onclick="myFunction(1)">2</button>
+        <button type="button" class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal1" id="1" value="02" onclick="questionFunction(1)">2</button>
 
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h2 class="modal-title" id="exampleModalLabel"></h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                <div class="row">
-                    <div class="col">
-                        <p class="fs-3 card-body" id="pquestion1"></p>
-                        <div class="d-grid gap-3 mt-5 " id="butngrop">
-                            <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt1"></button>
-                            <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt2"></button>
-                            <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt3"></button>
-                            <button class="btn btn-outline-dark col-6 ms-5 btn-lg text-start ps-5" type="button" id="bt4"></button>
-            
-                          </div>
-                    </div>
-                </div>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-            </div>
-        </div>
+        
 
         <div class="grid-item">3</div>  
         <div class="grid-item">4</div>
