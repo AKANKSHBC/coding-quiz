@@ -120,20 +120,23 @@ function checkanswer(t) {
     console.log(q)
 
     var butngrop = document.getElementById('butngrop');
-        var buttonOptions = [];
+    var buttonOptions = [];
 
-        for( var i=0; i < 4; i++) {
-            buttonOptions.push(butngrop.children[i]);
+    for( var i=0; i < 4; i++) {
+        buttonOptions.push(butngrop.children[i]);
+    };
+    console.log(buttonOptions);
+
+    for( var i=0; i<4; i++) {
+        if(buttonOptions[i].classList.contains("btn-secondary")) {
+            if(buttonOptions[i].value == questions[q-300].answer ) {
+                buttonOptions[i].className = "btn btn-success col-6 ms-5 btn-lg text-start ps-5";
+            } else {
+                buttonOptions[i].className = "btn btn-danger col-6 ms-5 btn-lg text-start ps-5";
+            };    
         };
-        console.log(buttonOptions);
-
-        for( var i=0; i<4; i++) {
-            if(buttonOptions[i].classList.contains("btn-secondary")) {
-                if(buttonOptions[i].value == questions[q-300].answer ) {
-                    buttonOptions[i].className = "btn btn-success col-6 ms-5 btn-lg text-start ps-5";
-                } else buttonOptions[i].className = "btn btn-danger col-6 ms-5 btn-lg text-start ps-5";
-            };    };
-
+                
+    };
 };
 
 
